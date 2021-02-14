@@ -4,6 +4,6 @@ jobs: #List of jobs
   check-bats-version: #Name of the job
     runs-on: ubuntu-latest #Asking the github to run on latest ubuntu
     steps: #List of steps to be performed on the machine to fulfill job
-      - uses: actions/checkout@v2 #A github action named 'Checkout' will be applied on the repo
+      - uses: actions/checkout@v1 #A github action named 'Checkout' will be applied on the repo
       - uses: actions/setup-java@v1 #A github action 'setup node' will be applied on the server
       - run: mvn clean #running the mvn command
