@@ -6,4 +6,4 @@ jobs: #List of jobs
     steps: #List of steps to be performed on the machine to fulfill job
       - uses: actions/checkout@v2 #A github action named 'Checkout' will be applied on the repo
       - uses: actions/setup-java@v1 #A github action 'setup node' will be applied on the server
-      - run: mvn clean
+      - run: mvn clean #running the mvn command
