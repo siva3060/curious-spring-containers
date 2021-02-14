@@ -4,6 +4,6 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v2
-      -uses: actions/setup-node@v1
-      -run: mvn clean
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: mvn clean
