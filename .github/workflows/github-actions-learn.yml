@@ -1,9 +1,9 @@
-name: Learning GITHUB actions
-on: [PUSH]
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+name: Learning GITHUB actions # Name of the work flow
+on: [PUSH] # Triggering the work flow based on event push
+jobs: #List of jobs
+  check-bats-version: #Name of the job
+    runs-on: ubuntu-latest #Asking the github to run on latest ubuntu
+    steps: #List of steps to be performed on the machine to fulfill job
+      - uses: actions/checkout@v2 #A github action named 'Checkout' will be applied on the repo
+      - uses: actions/setup-java@v1 #A github action 'setup node' will be applied on the server
       - run: mvn clean
